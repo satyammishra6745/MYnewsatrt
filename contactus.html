@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us</title>
+<link rel="icon" href="images/apnalogo.png" type="image/x-icon">
+<link rel="stylesheet" href="contactus.css">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- AOS Animation Library -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+
+
+    <nav class="navbar">
+
+    <!-- Logo -->
+    <div class="logo-box">
+        <img src="images/apnalogo.png" alt="logo">
+        <div class="logo-text">
+            Infi<span>core</span>
+        </div>
+    </div>
+
+    <!-- Links -->
+    <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="service.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contactus.html">Contact</a></li>
+        <li class="mobile-btn"><a href="contactus.html">Get Started</a></li>
+    </ul>
+
+    <!-- Desktop Button -->
+    <div class="nav-btn">
+        <a href="contactus.html">Get Started</a>
+    </div>
+
+    <!-- Hamburger -->
+    <div class="menu-toggle" onclick="toggleMenu()">
+        ☰
+    </div>
+
+</nav>
+
+<!-- HERO -->
+<section class="contact-hero">
+  <div data-aos="zoom-in">
+    <h1>Contact Us</h1>
+    <p>Let’s discuss your project & build something amazing together.</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section">
+  <div class="contact-container">
+
+    <!-- INFO -->
+    <div class="contact-info" data-aos="fade-right">
+
+      <div class="info-box">
+        <div class="info-icon">📞</div>
+        <div class="info-text">
+          <h4>Call Us</h4>
+          <p>+91 93256 24219</p>
+        </div>
+      </div>
+
+      <div class="info-box">
+        <div class="info-icon">📧</div>
+        <div class="info-text">
+          <h4>Email</h4>
+          <p>info@inficore.com</p>
+        </div>
+      </div>
+
+      <div class="info-box">
+        <div class="info-icon">📍</div>
+        <div class="info-text">
+          <h4>Location</h4>
+          <p>Maharashtra, India</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- FORM -->
+    <form class="contact-form" action="https://formspree.io/f/xjgegklz" method="POST" data-aos="fade-left">
+
+      <!-- Thank-you page redirect -->
+      <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+      <!-- Spam protection -->
+      <input type="text" name="_gotcha" style="display:none">
+
+      <div class="form-group">
+        <input type="text" name="name" placeholder="Your Name" required>
+      </div>
+
+      <div class="form-group">
+        <input type="email" name="email" placeholder="Your Email" required>
+      </div>
+
+      <div class="form-group">
+        <input type="text" name="subject" placeholder="Subject">
+      </div>
+
+      <div class="form-group">
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      </div>
+
+      <button type="submit">Send Message 🚀</button>
+
+    </form>
+
+  </div>
+
+  <!-- MAP -->
+  <div class="map-section" data-aos="zoom-in-up">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.280150497745!2d72.8408179746731!3d19.400297891712682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7af7704e91ad3%3A0x792943a8d35d5ccd!2sGokhiware%20Shiv%20Mandir!5e0!3m2!1sen!2sin!4v1770735880504!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+</section>
+
+<!-- AOS Script -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({
+  duration:1000,
+  once:true
+});
+function toggleMenu(){
+    document.getElementById("navLinks").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>

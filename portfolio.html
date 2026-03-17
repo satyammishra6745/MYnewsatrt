@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Portfolio</title>
+  <link rel="icon" href="images/apnalogo.png" type="image/x-icon">
+  <link rel="stylesheet" href="port.css">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar" data-aos="fade-down">
+
+  <!-- Logo -->
+  <div class="logo-box" data-aos="fade-right">
+      <img src="images/apnalogo.png" alt="logo">
+      <div class="logo-text">
+          Infi<span>core</span>
+      </div>
+  </div>
+
+  <!-- Links -->
+  <ul class="nav-links" id="navLinks" data-aos="fade-left">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="service.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contactus.html">Contact</a></li>
+      <li class="mobile-btn"><a href="contactus.html">Get Started</a></li>
+  </ul>
+
+  <!-- Desktop Button -->
+  <div class="nav-btn" data-aos="zoom-in">
+      <a href="contactus.html">Get Started</a>
+  </div>
+
+  <!-- Hamburger -->
+  <div class="menu-toggle" onclick="toggleMenu()" data-aos="fade-up">
+      ☰
+  </div>
+
+</nav>
+
+<!-- HERO -->
+<section class="portfolio-hero">
+  <div data-aos="fade-up">
+    <h1>Our Creative Portfolio</h1>
+    <p>We design and develop digital products that help businesses grow online.</p>
+  </div>
+</section>
+
+<!-- FILTER -->
+<section class="portfolio-filter" data-aos="fade-up" data-aos-delay="100">
+  <button class="filter-btn">All</button>
+  <button class="filter-btn">Website</button>
+  <button class="filter-btn">E-commerce</button>
+  <button class="filter-btn">App</button>
+  <button class="filter-btn">Design</button>
+</section>
+
+<!-- PROJECTS -->
+<section class="portfolio-container">
+
+  <div class="portfolio-card" data-aos="fade-right">
+    <div class="portfolio-img" style="background-image:url('https://images.unsplash.com/photo-1559028012-481c04fa702d');"></div>
+    <div class="portfolio-content" data-aos="fade-up" data-aos-delay="100">
+      <h3>Restaurant Website</h3>
+      <span>Business Website</span>
+      <p>Modern responsive restaurant website with menu, gallery and booking system.</p>
+    </div>
+  </div>
+
+  <div class="portfolio-card" data-aos="fade-left" data-aos-delay="200">
+    <div class="portfolio-img" style="background-image:url('https://images.unsplash.com/photo-1460925895917-afdab827c52f');"></div>
+    <div class="portfolio-content" data-aos="fade-up" data-aos-delay="300">
+      <h3>E-commerce Store</h3>
+      <span>Online Shopping</span>
+      <p>Full featured ecommerce website with cart, payment gateway and admin panel.</p>
+    </div>
+  </div>
+
+  <div class="portfolio-card" data-aos="fade-right" data-aos-delay="400">
+    <div class="portfolio-img" style="background-image:url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f');"></div>
+    <div class="portfolio-content" data-aos="fade-up" data-aos-delay="500">
+      <h3>Corporate Website</h3>
+      <span>Company Profile</span>
+      <p>Professional corporate website for business branding and lead generation.</p>
+    </div>
+  </div>
+
+</section>
+
+<!-- STATS -->
+<section class="portfolio-stats">
+  <div class="stats-container">
+    <div class="stat-box" data-aos="fade-up">
+      <h2>10+</h2>
+      <p>Projects Completed</p>
+    </div>
+    <div class="stat-box" data-aos="fade-up" data-aos-delay="100">
+      <h2>8+</h2>
+      <p>Happy Clients</p>
+    </div>
+    <div class="stat-box" data-aos="fade-up" data-aos-delay="200">
+      <h2>1+</h2>
+      <p>Years Experience</p>
+    </div>
+    <div class="stat-box" data-aos="fade-up" data-aos-delay="300">
+      <h2>24/7</h2>
+      <p>Support Available</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="portfolio-cta" data-aos="fade-up" data-aos-delay="100">
+  <h2>Have a Project in Mind?</h2>
+  <p>Let’s build something amazing together.</p>
+  <a href="contactus.html">Contact Us</a>
+</section>
+
+<script>
+function toggleMenu(){
+    document.getElementById("navLinks").classList.toggle("active");
+}
+</script>
+
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true, // scroll trigger only once
+  });
+</script>
+
+</body>
+</html>
