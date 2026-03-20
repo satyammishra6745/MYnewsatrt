@@ -577,7 +577,7 @@ body{
     }
     .close-btn {
         top: 8px;
-        right: 8px;
+        right: 20px;
         font-size: 18px;
         padding: 4px 8px;
     }
